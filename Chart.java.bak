@@ -1,0 +1,11 @@
+class Chart 
+{
+	public static void main(String[] args) 
+	{
+		char[] arr=new char[5];
+		char[] arr={'h','e','r','o'};
+		for(int i=0;i<5;i++){
+		System.out.println(arr[i]);
+		}
+	}
+}

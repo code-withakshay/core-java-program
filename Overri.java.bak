@@ -1,0 +1,29 @@
+class Shap
+{
+	protected int x;
+	
+	public Shap(int x)
+	{
+		this.x=x;
+		System.out.print("This is a X value:"+x+"=");
+	}
+}
+class Squre extends Shap
+{
+	public Squre(int x)
+	{
+		super(x);
+	}
+	public void squreMethod()
+	{
+		System.out.println((x*x));	
+	}
+}
+class Overri
+{
+	public static void main(String[] args)
+	{
+		Squre s=new Squre(7);
+		s.squreMethod();
+	}
+}

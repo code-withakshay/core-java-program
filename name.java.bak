@@ -1,0 +1,10 @@
+class name
+{
+	final int a;
+		a=1000;
+	public static void main(String[] args) 
+	{
+		name n=new name();
+		System.out.println(n.a);
+	}
+}

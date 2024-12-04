@@ -1,0 +1,51 @@
+// Engine class
+class Engine {
+    private String type;
+    
+    // Constructor
+    public Engine(String type) {
+        this.type = type;
+    }
+    
+    // Getter for engine type
+    public String getType() {
+        return type;
+    }
+    
+    // Method to display engine details
+    public void displayEngineDetails() {
+        System.out.println("Engine Type: " + type);
+    }
+}
+
+// Car class (Has-A relationship with Engine)
+class Car {
+    private String model;
+    private Engine engine;  // Car has an Engine
+    
+    // Constructor
+    public Car(String model, Engine engine) {
+        this.model = model;
+        this.engine = engine;
+    }
+    
+    // Method to display car details
+    public void displayCarDetails() {
+        System.out.println("Car Model: " + model);
+        engine.displayEngineDetails();  // Delegating to Engine class
+    }
+}
+
+// Main class to test the relationship
+public class Arrp {
+    public static void main(String[] args) {
+        // Creating an Engine object
+        Engine engine = new Engine("V8");
+
+        // Creating a Car object and passing the engine object
+        Car car = new Car("Ford Mustang", engine);
+
+        // Displaying car details (which includes engine details)
+        car.displayCarDetails();
+    }
+}

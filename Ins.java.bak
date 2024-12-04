@@ -1,0 +1,14 @@
+class Ins
+{
+	static String s="Akshay";
+
+	public static void main(String[] args)
+	{
+		System.out.println(s); // null 
+		
+		Ins t=new Ins();
+		System.out.println(t.s); // null 
+			
+		System.out.println(Ins.s); // null	
+	}
+}

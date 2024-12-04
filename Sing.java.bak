@@ -1,0 +1,12 @@
+//import java.util.Scanner;
+//import java.util.Arrays;
+class Sing
+{
+	int i=10;
+	public static void main(String[] args) 
+	{
+		Sing s=new Sing();
+
+			System.out.println(s.i);
+	}
+}

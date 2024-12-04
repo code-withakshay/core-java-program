@@ -1,0 +1,17 @@
+package com.codewith.www;
+import java.util.Calendar;
+class Pack {
+    public static void main(String[] args)
+    {
+        Calendar c=Calendar.getInstance();
+        int h=c.get(Calendar.HOUR_OF_DAY);
+        if(h<12)
+            System.out.println("Good Morning");
+        else if(h<16)
+             System.out.println("Good Afternoon");
+        else if(h<20)
+         System.out.println("Good Evening");
+        else
+            System.out.println("Good Night");  
+    }
+}
